@@ -1,0 +1,1014 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 5000px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.home{
+    height: 100vh;
+    width: 100%;
+    background-image: url(../Image/fZl9ad8WXiXWPyDP-generated_image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.home-overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3) ;
+}
+.header{
+    width: 100%;
+    height: 50px;
+    background-color : rgba(37, 162, 68, 0.5);;
+    border-radius: 5px;
+    /* opacity: 0.6; */
+    position: fixed;
+}
+.home-img1{
+    width: 100px;
+    height: 70px;
+    float: left;
+    margin-left: 30px;
+    margin-top: -10px;
+}
+.home-img2{
+    height: 150px;
+    float: left;
+    /* margin-left: 10px; */
+    margin-top: -50px;
+}
+.list{
+    list-style: none;
+    float: right;
+    margin-right: 50px;
+    padding-top: 10px;
+}
+.list li{
+    display: inline;
+    margin-left: 20px;
+    color: #FFFFFF;
+}
+.list li a {
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: bold;
+}
+.list li a:hover{
+    text-decoration: underline;
+    margin-top: 10px;
+    text-decoration-color: #10451d;
+    text-decoration-thickness: 2px;
+}
+.home-contant{
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50% , -50% );
+    text-align: center;
+}
+.home-title{
+    color: white;
+    font-size: 60px;
+    text-transform: uppercase;
+}
+.home-contant p {
+    margin: 10px 0px;
+    color: #b7efc5;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+.home-but{
+    width: 150px;
+    height: 50px;
+    border: 3px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    text-transform: capitalize;
+    color: #008000;
+    background-color:#b7efc5;
+    margin-left: 15px;
+}
+.home-but2{
+    width: 150px;
+    height: 50px;
+    border: 3px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    text-transform: capitalize;
+    color: white;
+    background-color: #38b000;
+}
+.home-but:hover{
+    opacity: 0.7;
+}
+.home-but2:hover{
+    opacity: 0.9;
+}
+i{
+    color: #38b000;
+    font-size: 40px;
+}
+/* --------------------------------------------- section 2 ------------------------------------------------ */
+.discover-head1{
+    margin-top: 50px ;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    color: #004b23;
+}
+.discover-p1{
+    width: 150px;
+    height: 5px;
+    background-color: #007200;
+    margin: auto;
+}
+.discover-card{
+    margin-top: 50px;
+}
+.card{
+    margin-left: 160px;
+    margin-top: 50px;
+    width: 300px;
+    height: 220px;
+    border: 3px solid #004b23;
+    border-radius: 10px;
+    float: left;
+    text-align: center;
+    position: relative;
+}
+.icon-card1 i{
+    margin: 5px 0px;
+    font-size: 40px;
+    padding-top: 10px;
+    color: #38b000;
+}
+.card-head1 h3{
+    font-size: 35px;
+}
+.discover-head2{
+    font-size: 25px;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #004b23;
+}
+.discover-p2{
+    font-size: 15px;
+    margin-top: 15px;
+    color: #38b000;
+    font-weight: bold;
+}
+.descover-link{
+    text-decoration: none;
+    font-size: 20px;
+    padding-top: 10px;
+    color: #004b23;
+    font-weight: bold;
+}
+/* .descover-link:hover{
+    color: #38b000;
+    text-decoration: underline;  
+} */
+.titel-house-plants{
+    font-size: 55px;
+    text-align: center;
+    color: #004b23;
+    width: 400px;
+    height: 20px;
+    margin: auto;
+    margin-top: 50px;
+}
+.line-house-plants{
+    display: block;
+    width: 85px;
+    height: 4px;
+    background-color: #004b23;
+    margin: auto;
+    margin-top: 50px;
+}
+.container-house-plants{
+    width: 80%;
+    margin: auto;
+    height: 400px;
+}
+.card::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 0;
+    top: 0px;
+    left: 0px;
+    background-color: #70e000;
+    opacity: 0;
+}
+.card:hover:after {
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+    transition: 2s;
+}
+/* ناقص التأثير في السكشن رقم 2 واني انزل ال العنوان ال في الكارد تحت شوية  */
+
+/* /////////////////////////////////////////////////سكشن 3 //////////////////////////////////////////////////////////////////////////*/
+.header-Featured-Plants{
+    width: 100%;
+    height: 100px;
+    margin-top: 100px;
+}
+.titel-Featured-Plants{
+    font-size: 55px;
+    text-align: center;
+    color: #004b23;
+    width: 500px;
+    height: 20px;
+    margin: auto;
+    padding-top: 50px;
+}
+.line-Featured-Plants{
+    display: block;
+    width: 110px;
+    height: 4px;
+    background-color: #004b23;
+    margin: auto;
+    margin-top: 70px;
+}
+/* .container-Featured-Plants{
+    width: 80%;
+    margin: auto;
+    height: 800px;
+} */
+.Featured-Plants-parent{
+    width: 100%;
+    height: 800px;
+    background-color: #b7e4c7;
+    margin-top: 500px;
+}
+.Featured-Plants-img{
+    width: 300px;
+    height: 200px;
+    margin-left: 150px;
+    float: left;
+    margin-top: 70px;
+}
+.Featured-Plants1{
+    width: 300px;
+    height: 200px;
+}
+.Featured-Plants-info{
+    position: relative;
+}
+.Featured-Plants-info h2{
+    text-align: center;
+    color: whitesmoke;
+    margin-top: -170px;
+    font-size: 35px;
+    font-weight: bold;
+}
+.Featured-Plants-info p{
+    text-align: center;
+    margin-top: 20px;
+    color: whitesmoke;
+    font-weight: bold;
+}
+.Featured-Plants-icon{
+    position: relative;
+    width: 100%;
+    height: 30px;
+    margin: auto;
+    /* margin-top: 10px; */
+    padding-top: 15px;
+    padding-left: 100px;
+}
+.Featured-Plants-icon i{
+    font-size: 25px;
+    text-align: center;
+    margin-top: 10px;
+    color: #008000;
+    font-weight: bold;
+    background-color: #b7efc5;
+    width: 50px;
+    height: 40px;
+    border-radius: 10px;
+    padding-top: 8px;
+}
+.Featured-Plants-info::after {
+    content: "";
+    position: absolute;
+    /* width: 0%;
+    height: 0;
+    top: 0px;
+    left: 0px; */
+    visibility: hidden;
+}
+.Featured-Plants-info:hover::after {
+    /* width: 100%;
+    height: 100%;
+    opacity: 0.3;
+    transition: 2s; */
+    visibility: visible;
+}
+
+/* /////////////////////////////////////////////////سكشن 3 //////////////////////////////////////////////////////////////////////////*/
+/*--------------------------------- section 4------------------------------ */
+.Spring-Collection-head1{
+    font-size: 55px;
+    text-align: center;
+    color: #004b23;
+    width: 500px;
+    height: 20px;
+    margin: auto;
+    padding-top: 50px;
+}
+.Spring-Collection-p1{
+    display: block;
+    width: 110px;
+    height: 4px;
+    background-color: #004b23;
+    margin: auto;
+    margin-top: 70px;
+}
+.container-Spring-Collection{
+    width: 80%;
+    margin: auto;
+    height: 400px;
+}
+.Spring-Collection-card{
+    width: 350px;
+    height: 220px;
+    border: 3px solid #004b23;
+    border-radius: 10px;
+    float: left;
+    text-align: center;
+    margin-top: 50px;
+    position: relative;
+}
+.Spring-Collection-card2{
+    margin-right: 80px;
+    margin-left: 80px;
+}
+.Spring-Collection-icon-head{
+    float: left;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+.Spring-Collection-icon-head i{
+    color: #008000;
+}
+.Spring-Collection-Span{
+    margin: 20px 0px;
+    margin-left: 10px;
+    width: 250px;
+   
+}
+.Spring-Collection-Span span{
+    font-size: 25px;
+    font-weight: bold;  
+    color: #2d6a4f;  
+}
+.Spring-Collection-p{
+   width: 230px;
+   margin-left: 50px;
+}
+.Spring-Collection-p p {
+    color: #40916c;
+    font-size: 18px;
+    font-weight: bold;
+}
+.Spring-Collection-card::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 0;
+    top: 0px;
+    left: 0px;
+    background-color: #70e000;
+    opacity: 0;
+}
+.Spring-Collection-card:hover::after {
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+    transition: 2s;
+}
+/*--------------------------------- section 5------------------------------ */
+.why-choose-us{
+    font-size: 40px;
+    font-weight: bold;
+    color: #10451d;
+    margin-top: 400px;
+}
+.why-pragraph{
+    display: block;
+    width: 70px;
+    height: 4px;
+    background-color: #38b000;
+    margin-top: 5px;
+}
+.pra-why{
+    width: 750px;
+    margin-top: -300px;
+    color: #008000;
+    font-weight: bold;
+    margin-left: 150px;
+}
+.icon-span-why{
+    margin-top: 30px;
+    margin-left: 150px;
+    float: left;
+}
+.icon-span-why i{
+    font-size: 20px;
+    margin-top: 20px;
+}
+.icon-span-why span{
+    color: #008000;
+    font-weight: bold;
+}
+.image-span-why{
+    margin-top : -130px ;  
+   
+}
+.image-why{
+    width: 350px;
+    height: 500px;
+    margin-left: 500px ;
+    border-radius: 5px;
+}
+.icon-why{
+    margin-top: 10px;
+    margin-left: 1180px;
+}
+.icon-why i {
+    font-size: 20px;
+    color: #10451d;
+    margin-right: 10px;
+}
+.icon-why i:hover {
+    color: #38b000;
+}
+/*--------------------------------- section 6------------------------------ */
+.contant-flowrs{
+    background-image: url(../Image/modern-home-with-green-plants-enhancing-interior-with-natural-beauty-fresh-vibrant-atmosphere-living_875722-68005noha.jpg);
+    width: 100%;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    position: relative;
+    margin-top: 150px;
+    text-align: center;
+}
+.overlay-flower{
+    width: 100%;
+    height: 500px;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.icon-pragraph-flower-1{
+    float: left;
+    margin-left: 200px;
+    margin-right: 170px;
+    margin-top: 220px;
+}
+.icon-pragraph-flower-1 i{
+    color: #b7efc5;
+    font-size: 50px;
+    font-weight: bold;
+}
+.icon-pragraph-flower-1 p {
+    margin-top: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #d8f3dc;
+}
+.icon-pragraph-flower-2{
+    float: left;
+    margin-right: 200px;
+    margin-top: 220px;
+}   
+.icon-pragraph-flower-2 i{
+    color: #b7efc5;
+    font-size: 50px;
+    font-weight: bold;
+} 
+.icon-pragraph-flower-2 p {
+    margin-top: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #d8f3dc;
+}
+.icon-pragraph-flower-3{
+    float: left;
+    margin-right: 200px;
+    margin-top: 220px;
+}
+.icon-pragraph-flower-3 i{
+    color: #b7efc5;
+    font-size: 50px;
+    font-weight: bold;
+}
+.icon-pragraph-flower-3 p {
+    margin-top: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #d8f3dc;
+}
+.icon-pragraph-flower-4{
+    float: left;
+    margin-right: 200px;
+    margin-top: 220px;
+}
+.icon-pragraph-flower-4 i{
+    color: #b7efc5;
+    font-size: 50px;
+    font-weight: bold;
+}
+.icon-pragraph-flower-4 p {
+    margin-top: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #d8f3dc;
+}
+/*--------------------------------- section 7------------------------------ */
+.titel-pricing-table{
+    font-size: 55px;
+    text-align: center;
+    color: #004b23;
+    width: 400px;
+    height: 20px;
+    margin: auto;
+    margin-top: 150px;
+}
+.line-pricing-table{
+    display: block;
+    width: 90px;
+    height: 4px;
+    background-color: #004b23;
+    margin: auto;
+    margin-top: 60px;
+}
+.pricing-table-item{
+    float: left;
+    /* background-color: #d8f3dc; */
+    width: 30%;
+    padding: 16px 14px;
+    text-align: center;
+    margin-top: 50px;
+    border-radius: 5px;
+    border: #10451d solid 2px;
+    position: relative;
+}
+.pricing-table-item-2{
+    margin: 0px 5%;
+    margin-top: 50px;
+    border-radius: 5px;
+    float: left;
+    /* background-color: #d8f3dc; */
+    width: 30%;
+    padding: 16px 14px;
+    text-align: center;
+    margin-top: 50px;
+    border-radius: 5px;
+    border: #10451d solid 2px;
+}
+.pricing-table-p{
+    margin: 20px 0px;
+}
+.pricing-table-p p{
+    font-size: 25px;
+    font-weight: bold;
+    color: #006400;
+}
+.pricing-table-p p:hover{
+    color: #9ef01a;
+}
+.pricing-table-head-pra{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 125px;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    border: #007200 solid 2px;
+    /* padding-left: 100px; */
+}
+.pricing-table-head-pra h3{
+    margin-top: 20px;
+    font-size: 25px;
+    font-weight: bold;
+    color: #007200;
+}
+.pricing-table-head-pra p{
+    /* margin-top: 5px; */
+    font-size: 20px;
+    font-weight: bold;
+    color: #007200;
+}
+.pricing-table-3-pra{
+    margin: 30px 0px;
+}
+.pricing-table-3-pra p{
+    font-size: 15px;
+    margin-top: 20px;
+    font-weight: bold;
+    color: #007200;
+}
+.purchase-now{
+    margin: 30px 0px;
+    font-size: 15px;
+    color: #007200;
+    width: 120px;
+    height: 30px;
+    /* padding-left: 50px; */
+    background-color: #d8f3dc;
+    border: #007200 solid 2px;
+    border-radius: 7px;
+    margin: auto;
+    padding-top: 5px;
+}
+.pricing-table-item::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0;
+    top: 0px;
+    left: 0px;
+    background-color: #74c69d;
+    opacity: 0;
+}
+.pricing-table-item:hover::after {
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+    transition: 2s;
+}
+
+/*--------------------------------- section 8------------------------------ */
+.content-people{
+    background-image: url(../Image/0SUJqonV03oGkCCR-generated_image.jpg);
+    width: 100%;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    position: relative;
+    margin-top: 200px;
+}
+.overlay-people{
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.team-people-1{
+    /* text-align: center; */
+    float: left;
+    margin-left: 300px;
+    margin-top: 150px;
+}
+.team-people-2{
+    /* text-align: center; */
+    float: left;
+    margin-right: 30px;
+    margin-top: 150px;
+}
+.image-people-1{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    /* margin-top: -60px; */
+    /* margin-right: 800px; */
+    background-color: #b7efc5;
+    float: left;
+    padding-top: -10px;
+
+}
+.image-people-2{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    /* margin-top: -60px; */
+    margin-left: 80px;
+    margin-right: 20px;
+    background-color: #b7efc5;
+    float: left;
+}
+.team-people-1 h3{
+    display: block;
+    margin-top: 30px;
+    color: #b7e4c7;
+    margin-left: 120px;
+    font-size: 40px;
+
+}
+.team-people-1 h4{
+    display: inline;
+    margin-top: 30px;
+    color: #d8f3dc;
+    margin-left: 40px;
+    font-size: 25px;
+    font-weight: bold;
+}
+.p-people{
+    display: block;
+    width: 400px;
+    margin-top: 10px;
+    color: white;
+    margin-top: 30px;
+}
+.team-people-2 h3{
+    display: block;
+    margin-top: 30px;
+    color: #b7e4c7;
+    /* margin-left: 20px; */
+    font-size: 40px;
+
+}
+.team-people-2 h4{
+    display: inline;
+    margin-top: 30px;
+    color: #d8f3dc;
+    margin-left: 20px;
+    font-size: 25px;
+    font-weight: bold;
+}
+.p-people-2{
+    display: block;
+    width: 400px;
+    margin-top: 10px;
+    color: white;
+    margin-top: 30px;
+    margin-left: 100px;
+}
+/*--------------------------------- section 9------------------------------ */
+
+.house-plants-item{
+    float: left;
+    background-color: #d8f3dc;
+    width: 30%;
+    padding: 16px 14px;
+    text-align: center;
+    margin-top: 50px;
+    border-radius: 5px;
+    position: relative;
+}
+.house-plants-item-2{
+    margin: 0px 5%;
+    margin-top: 50px;
+    border-radius: 5px;
+}
+.house-plants-img{
+    width: 90%;
+    margin: auto;
+    position: relative; /* بيقفل علي العنصر الحدود بتاعته يلتزم بحدود العنصر دا ميطلعش براه  */
+}
+.plants-image1{
+    width: 100%;
+}
+.house-plants-icon{
+    position: absolute;  /* بنكتب الخاصية لما نكون عايزين يكون في حاجتين فوق بعض  */ 
+    background-color: rgba(0, 0, 0, 0.3);
+   width: 304px;
+   height: 200px;
+   margin-left: auto;
+   background-color: #38b000;
+   /* visibility: hidden; */
+}
+.house-plants-icon i {
+    display: block;
+    margin-left: auto;   
+    background-color: #95d5b2;
+    width: 45px;
+    height: 45px;
+    font-size: 25px;
+    line-height: 45px;
+}
+.house-info-titel{
+    color: #007200;
+    margin-top: 10px;
+}
+.house-info-pragrahph{
+    color: #38b000;
+    margin-top: 10px;
+    font-weight: bold;
+}
+.house-plants-item::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0;
+    top: 0px;
+    left: 0px;
+    background-color: black;
+    opacity: 0;
+}
+.house-plants-item:hover::after {
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+    visibility: hidden;
+    transition: 1s;
+}
+.house-plants-item:hover::after.house-plants-icon{
+    visibility: visible;
+    opacity: 0.3;
+    transition: 1s;
+
+}
+/* ////////////////////////////////////////////section 10//////////////////////////////////////////// */
+.titel-plant-Guide{
+    font-size: 55px;
+    text-align: center;
+    color: #004b23;
+    width: 400px;
+    height: 20px;
+    margin: auto;
+    margin-top: 50px;
+}
+.line-plant-Guide{
+    display: block;
+    width: 85px;
+    height: 4px;
+    background-color: #004b23;
+    margin: auto;
+    margin-top: 50px;
+}
+.container{
+    width: 80%;
+    margin: auto;
+    height: 400px;
+}
+.plant-Guide-item{
+    float: left;
+    background-color: #d8f3dc;
+    width: 30%;
+    padding: 16px 14px;
+    text-align: center;
+    margin-top: 50px;
+    border-radius: 5px;
+    border: #10451d solid 2px;
+    position: relative;
+}
+.plant-Guide-item-2{
+    margin: 0px 5%;
+    margin-top: 50px;
+    border-radius: 5px;
+    float: left;
+    background-color: #d8f3dc;
+    width: 30%;
+    padding: 16px 14px;
+    text-align: center;
+    margin-top: 50px;
+    border-radius: 5px;
+    border: #10451d solid 2px;
+}
+.plant-Guide-img{
+    width: 90%;
+    margin: auto;
+    position: relative; /* بيقفل علي العنصر الحدود بتاعته يلتزم بحدود العنصر دا ميطلعش براه  */
+    background-color: #d8f3dc;
+}
+.plant-Guide-image1{
+    width: 80%;
+    height: 250px;
+    border-radius: 5px;
+}
+.house-plants-icon{
+    position: absolute;  /* بنكتب الخاصية لما نكون عايزين يكون في حاجتين فوق بعض  */ 
+    background-color: rgba(0, 0, 0, 0.3);
+   width: 304px;
+   height: 200px;
+   margin-top: -200px;
+   display: block;
+   margin-left: auto;
+   /* visibility: hidden; */
+}
+.plant-Guide-icon i{
+    font-size: 20px;
+    margin: 10px 0px;
+    text-align: center;
+
+}
+.plant-Guide-titel{
+    margin: 10px 0px;
+    text-align: center;
+    color: #008000;
+}
+
+.plant-Guide-titel:hover{
+    color: white;
+}
+
+.plant-Guide-pragrahph{
+    font-size: 15px;
+    margin: 10px 0px;
+    text-align: center;
+    color: #38b000;
+    /* font-weight: bold; */
+}
+.plant-Guide-pragrahph:hover{
+    color: #004b23;
+}
+
+.plant-Guide-link{
+    font-size: 15px;
+    margin: 10px 0px;
+    text-align: center;
+    color: #008000;
+    font-weight: bold;
+    text-decoration-line: none;
+}
+/* .house-plants-item:hover .house-plants-icon{
+    visibility: visible;
+}
+.house-info-titel{
+    color: #007200;
+    margin-top: 10px;
+}
+.house-info-pragrahph{
+    color: #38b000;
+    margin-top: 10px;
+    font-weight: bold;
+} */
+.plant-Guide-item::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0;
+    top: 0px;
+    left: 0px;
+    background-color: #008000;
+    opacity: 0;
+}
+.plant-Guide-item:hover::after {
+    width: 100%;
+    height: 100%;
+    opacity: 0.1;
+    transition: 1s;
+}
+
+/* ////////////////////////////////////////////section 11//////////////////////////////////////////// */
+.Footer{
+    margin-top: 200px;
+    width: 100%;
+    height: 400px;
+    background-color: #d8f3dc;
+    /* margin: auto;
+    text-align: center; */
+}
+.image-footer{
+    width: 300px;
+    height: 250px;
+    margin: auto;
+   margin-top: 30px ;
+    border-radius: 10px;
+
+}
+.img-footer{
+    width: 400px;
+    height: 300px;
+    margin: auto;
+    margin-top: 30px;
+    padding-left: 45px;
+}
+.icon-footer i {
+    font-size: 30px;
+    text-align: center;
+    padding-left: 7px;
+    padding-top: -5px;
+    padding-right: 5px;
+    width: 50px;
+    height: 50px;
+    background-color: #38b000;
+    color: #9ef01a;
+    border-radius: 100%;
+    padding-top: 10px;
+
+}
+.icon-footer i:hover {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-color: #006400;
+}
+.icon-footer{
+    text-align: center;
+}
+.pragraph-footer{
+    text-align: center;
+    margin-top: 10px;
+}
+.p-footer{
+    font-size: 15px;
+    font-weight: bold;
+    color: #10451d;
+}
