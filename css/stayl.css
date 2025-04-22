@@ -32,6 +32,33 @@ body{
     /* opacity: 0.6; */
     position: fixed;
 }
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 80%;
+    background-color: green;
+    border-radius: 8px;
+    display: none;
+    flex-direction: column; 
+    min-width: 100px;
+    font-size: 15px;
+    font-weight: bold;
+  }
+  
+  .dropdown-menu li a {
+    color: white;
+    padding: 10px 15px;
+    display: block;
+    font-weight: bold;
+  }
+
+  .dropdown-menu li a:hover {
+    background-color: #228B22;
+  }
+  .dropdown:hover .dropdown-menu {
+    display: flex;
+  }
 .home-img1{
     width: 100px;
     height: 70px;
@@ -255,6 +282,7 @@ i{
     margin-top: 500px;
 }
 .Featured-Plants-img{
+    position: relative;
     width: 300px;
     height: 200px;
     margin-left: 150px;
@@ -270,30 +298,33 @@ i{
 }
 .Featured-Plants-info h2{
     text-align: center;
-    color: whitesmoke;
-    margin-top: -170px;
-    font-size: 35px;
+    color: #b7e4c7;
+    margin-top: -80px;
+    font-size: 30px;
     font-weight: bold;
 }
 .Featured-Plants-info p{
     text-align: center;
-    margin-top: 20px;
-    color: whitesmoke;
+    margin-top: 10px;
+    color: #b7e4c7;
     font-weight: bold;
+    font-size: 20px;
 }
-.Featured-Plants-icon{
-    position: relative;
-    width: 100%;
-    height: 30px;
-    margin: auto;
-    /* margin-top: 10px; */
-    padding-top: 15px;
-    padding-left: 100px;
+.Featured-Plants-icon {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
 }
 .Featured-Plants-icon i{
     font-size: 25px;
     text-align: center;
-    margin-top: 10px;
+    margin-top: -60px;
     color: #008000;
     font-weight: bold;
     background-color: #b7efc5;
@@ -302,23 +333,26 @@ i{
     border-radius: 10px;
     padding-top: 8px;
 }
-.Featured-Plants-info::after {
-    content: "";
+.Featured-Plants-info {
     position: absolute;
-    /* width: 0%;
-    height: 0;
-    top: 0px;
-    left: 0px; */
-    visibility: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
 }
-.Featured-Plants-info:hover::after {
-    /* width: 100%;
-    height: 100%;
-    opacity: 0.3;
-    transition: 2s; */
-    visibility: visible;
-}
-
+    .Featured-Plants-img:hover .Featured-Plants-icon {
+        opacity: 1;
+    }
+    .Featured-Plants-img:hover .Featured-Plants-info{
+        opacity: 1;
+    }
 /* /////////////////////////////////////////////////سكشن 3 //////////////////////////////////////////////////////////////////////////*/
 /*--------------------------------- section 4------------------------------ */
 .Spring-Collection-head1{
@@ -774,23 +808,32 @@ i{
 .plants-image1{
     width: 100%;
 }
-.house-plants-icon{
-    position: absolute;  /* بنكتب الخاصية لما نكون عايزين يكون في حاجتين فوق بعض  */ 
-    background-color: rgba(0, 0, 0, 0.3);
-   width: 304px;
-   height: 200px;
-   margin-left: auto;
-   background-color: #38b000;
-   /* visibility: hidden; */
+.house-plants-icon {
+    position: absolute;
+    top: 200px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(56, 176, 0, 0.7);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
 }
 .house-plants-icon i {
-    display: block;
-    margin-left: auto;   
     background-color: #95d5b2;
     width: 45px;
     height: 45px;
     font-size: 25px;
     line-height: 45px;
+    /* margin: 5px; */
+    text-align: center;
+    /* border-radius: 50%; */
+    display: block;
+    margin-left: auto;
 }
 .house-info-titel{
     color: #007200;
@@ -801,7 +844,7 @@ i{
     margin-top: 10px;
     font-weight: bold;
 }
-.house-plants-item::after {
+.plant-Guide-img::after {
     content: "";
     position: absolute;
     width: 100%;
@@ -811,18 +854,15 @@ i{
     background-color: black;
     opacity: 0;
 }
-.house-plants-item:hover::after {
+.plant-Guide-img:hover::after {
     width: 100%;
     height: 100%;
     opacity: 0.3;
     visibility: hidden;
     transition: 1s;
 }
-.house-plants-item:hover::after.house-plants-icon{
-    visibility: visible;
-    opacity: 0.3;
-    transition: 1s;
-
+.house-plants-img:hover .house-plants-icon {
+    opacity: 1;
 }
 /* ////////////////////////////////////////////section 10//////////////////////////////////////////// */
 .titel-plant-Guide{
